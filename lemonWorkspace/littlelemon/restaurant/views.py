@@ -19,4 +19,4 @@ class SingleMenuItemView(RetrieveUpdateAPIView,DestroyAPIView):#processing GET, 
 class BookingViewSet(ModelViewSet):
     queryset=models.Booking.objects.all()
     serializer_class=serializers.BookingSerializer
-    #permission_classes=[permissions.IsAuthenticated]
+    permission_classes=[permissions.IsAuthenticated]
